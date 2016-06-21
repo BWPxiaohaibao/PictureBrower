@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDF82948BCA692CB8A580F0 /* Pods_PhotographBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B5295C14EB4DE13C7988E6 /* Pods_PhotographBrowser.framework */; };
+		FF01E4FB1D1919D50080D6A0 /* PictureBrowserAnimated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF01E4FA1D1919D50080D6A0 /* PictureBrowserAnimated.swift */; };
+		FF86B1611D17FF0100E4CC15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1601D17FF0100E4CC15 /* AppDelegate.swift */; };
+		FF86B1661D17FF0100E4CC15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF86B1641D17FF0100E4CC15 /* Main.storyboard */; };
+		FF86B1681D17FF0100E4CC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF86B1671D17FF0100E4CC15 /* Assets.xcassets */; };
+		FF86B16B1D17FF0100E4CC15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF86B1691D17FF0100E4CC15 /* LaunchScreen.storyboard */; };
+		FF86B1941D18051A00E4CC15 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1931D18051A00E4CC15 /* HomeViewController.swift */; };
+		FF86B1961D18053900E4CC15 /* PictureBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1951D18053900E4CC15 /* PictureBrowserController.swift */; };
+		FF86B1981D18072B00E4CC15 /* HomeCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1971D18072B00E4CC15 /* HomeCollectionViewLayout.swift */; };
+		FF86B19B1D18335300E4CC15 /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B19A1D18335300E4CC15 /* HomeViewCell.swift */; };
+		FF86B19D1D18337300E4CC15 /* ShopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B19C1D18337300E4CC15 /* ShopModel.swift */; };
+		FF86B1A01D18471100E4CC15 /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B19F1D18471100E4CC15 /* HTTPTool.swift */; };
+		FF86B1A21D18577500E4CC15 /* PictureBrowserLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1A11D18577500E4CC15 /* PictureBrowserLayout.swift */; };
+		FF86B1A41D185C9200E4CC15 /* PictureBrowserViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF86B1A31D185C9200E4CC15 /* PictureBrowserViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55B5295C14EB4DE13C7988E6 /* Pods_PhotographBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotographBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A7EEB9FC2C2C69C3B5EF67 /* Pods-PhotographBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotographBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotographBrowser/Pods-PhotographBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		8BF7D558A8D4671A1D6F574E /* Pods-PhotographBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotographBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotographBrowser/Pods-PhotographBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		FF01E4FA1D1919D50080D6A0 /* PictureBrowserAnimated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBrowserAnimated.swift; sourceTree = "<group>"; };
+		FF86B15D1D17FF0100E4CC15 /* PhotographBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotographBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF86B1601D17FF0100E4CC15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF86B1651D17FF0100E4CC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF86B1671D17FF0100E4CC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Assets.xcassets; sourceTree = "<group>"; };
+		FF86B16A1D17FF0100E4CC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF86B16C1D17FF0100E4CC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Info.plist; sourceTree = "<group>"; };
+		FF86B1931D18051A00E4CC15 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FF86B1951D18053900E4CC15 /* PictureBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBrowserController.swift; sourceTree = "<group>"; };
+		FF86B1971D18072B00E4CC15 /* HomeCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewLayout.swift; sourceTree = "<group>"; };
+		FF86B19A1D18335300E4CC15 /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		FF86B19C1D18337300E4CC15 /* ShopModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopModel.swift; sourceTree = "<group>"; };
+		FF86B19F1D18471100E4CC15 /* HTTPTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
+		FF86B1A11D18577500E4CC15 /* PictureBrowserLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBrowserLayout.swift; sourceTree = "<group>"; };
+		FF86B1A31D185C9200E4CC15 /* PictureBrowserViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureBrowserViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF86B15A1D17FF0100E4CC15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDF82948BCA692CB8A580F0 /* Pods_PhotographBrowser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE72CCB1398FC7798DFB456A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55B5295C14EB4DE13C7988E6 /* Pods_PhotographBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C9F095BC800CDF30245F01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BF7D558A8D4671A1D6F574E /* Pods-PhotographBrowser.debug.xcconfig */,
+				60A7EEB9FC2C2C69C3B5EF67 /* Pods-PhotographBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF86B1541D17FF0100E4CC15 = {
+			isa = PBXGroup;
+			children = (
+				FF86B15F1D17FF0100E4CC15 /* PhotographBrowser */,
+				FF86B15E1D17FF0100E4CC15 /* Products */,
+				F6C9F095BC800CDF30245F01 /* Pods */,
+				EE72CCB1398FC7798DFB456A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF86B15E1D17FF0100E4CC15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B15D1D17FF0100E4CC15 /* PhotographBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF86B15F1D17FF0100E4CC15 /* PhotographBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B1601D17FF0100E4CC15 /* AppDelegate.swift */,
+				FF86B1641D17FF0100E4CC15 /* Main.storyboard */,
+				FF86B1901D1804FC00E4CC15 /* Class */,
+			);
+			path = PhotographBrowser;
+			sourceTree = "<group>";
+		};
+		FF86B1901D1804FC00E4CC15 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B1911D1804FC00E4CC15 /* 图片展示 */,
+				FF86B1921D1804FC00E4CC15 /* 图片浏览器 */,
+				FF86B19E1D18470100E4CC15 /* HTTPTool */,
+				FF86B1991D1831AE00E4CC15 /* Resources */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		FF86B1911D1804FC00E4CC15 /* 图片展示 */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B1931D18051A00E4CC15 /* HomeViewController.swift */,
+				FF86B1971D18072B00E4CC15 /* HomeCollectionViewLayout.swift */,
+				FF86B19A1D18335300E4CC15 /* HomeViewCell.swift */,
+				FF86B19C1D18337300E4CC15 /* ShopModel.swift */,
+			);
+			path = "图片展示";
+			sourceTree = "<group>";
+		};
+		FF86B1921D1804FC00E4CC15 /* 图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B1951D18053900E4CC15 /* PictureBrowserController.swift */,
+				FF86B1A11D18577500E4CC15 /* PictureBrowserLayout.swift */,
+				FF86B1A31D185C9200E4CC15 /* PictureBrowserViewCell.swift */,
+				FF01E4FA1D1919D50080D6A0 /* PictureBrowserAnimated.swift */,
+			);
+			path = "图片浏览器";
+			sourceTree = "<group>";
+		};
+		FF86B1991D1831AE00E4CC15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B1691D17FF0100E4CC15 /* LaunchScreen.storyboard */,
+				FF86B1671D17FF0100E4CC15 /* Assets.xcassets */,
+				FF86B16C1D17FF0100E4CC15 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FF86B19E1D18470100E4CC15 /* HTTPTool */ = {
+			isa = PBXGroup;
+			children = (
+				FF86B19F1D18471100E4CC15 /* HTTPTool.swift */,
+			);
+			path = HTTPTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF86B15C1D17FF0100E4CC15 /* PhotographBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF86B16F1D17FF0100E4CC15 /* Build configuration list for PBXNativeTarget "PhotographBrowser" */;
+			buildPhases = (
+				C248254DBB09FBEC0C71040D /* 📦 Check Pods Manifest.lock */,
+				FF86B1591D17FF0100E4CC15 /* Sources */,
+				FF86B15A1D17FF0100E4CC15 /* Frameworks */,
+				FF86B15B1D17FF0100E4CC15 /* Resources */,
+				5184FA3607DF87D1B53F0C4A /* 📦 Embed Pods Frameworks */,
+				43AE878E6C23A54CC6E8AFCE /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotographBrowser;
+			productName = PhotographBrowser;
+			productReference = FF86B15D1D17FF0100E4CC15 /* PhotographBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF86B1551D17FF0100E4CC15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = BWP;
+				TargetAttributes = {
+					FF86B15C1D17FF0100E4CC15 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FF86B1581D17FF0100E4CC15 /* Build configuration list for PBXProject "PhotographBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF86B1541D17FF0100E4CC15;
+			productRefGroup = FF86B15E1D17FF0100E4CC15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF86B15C1D17FF0100E4CC15 /* PhotographBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF86B15B1D17FF0100E4CC15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF86B16B1D17FF0100E4CC15 /* LaunchScreen.storyboard in Resources */,
+				FF86B1681D17FF0100E4CC15 /* Assets.xcassets in Resources */,
+				FF86B1661D17FF0100E4CC15 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43AE878E6C23A54CC6E8AFCE /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotographBrowser/Pods-PhotographBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5184FA3607DF87D1B53F0C4A /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotographBrowser/Pods-PhotographBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C248254DBB09FBEC0C71040D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF86B1591D17FF0100E4CC15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF01E4FB1D1919D50080D6A0 /* PictureBrowserAnimated.swift in Sources */,
+				FF86B1611D17FF0100E4CC15 /* AppDelegate.swift in Sources */,
+				FF86B1961D18053900E4CC15 /* PictureBrowserController.swift in Sources */,
+				FF86B19B1D18335300E4CC15 /* HomeViewCell.swift in Sources */,
+				FF86B1A21D18577500E4CC15 /* PictureBrowserLayout.swift in Sources */,
+				FF86B1A01D18471100E4CC15 /* HTTPTool.swift in Sources */,
+				FF86B1941D18051A00E4CC15 /* HomeViewController.swift in Sources */,
+				FF86B1A41D185C9200E4CC15 /* PictureBrowserViewCell.swift in Sources */,
+				FF86B1981D18072B00E4CC15 /* HomeCollectionViewLayout.swift in Sources */,
+				FF86B19D1D18337300E4CC15 /* ShopModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FF86B1641D17FF0100E4CC15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF86B1651D17FF0100E4CC15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF86B1691D17FF0100E4CC15 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF86B16A1D17FF0100E4CC15 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF86B16D1D17FF0100E4CC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF86B16E1D17FF0100E4CC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF86B1701D17FF0100E4CC15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF7D558A8D4671A1D6F574E /* Pods-PhotographBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = PhotographBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bao.Wan.Pei.PhotographBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF86B1711D17FF0100E4CC15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60A7EEB9FC2C2C69C3B5EF67 /* Pods-PhotographBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				INFOPLIST_FILE = PhotographBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Bao.Wan.Pei.PhotographBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF86B1581D17FF0100E4CC15 /* Build configuration list for PBXProject "PhotographBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF86B16D1D17FF0100E4CC15 /* Debug */,
+				FF86B16E1D17FF0100E4CC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF86B16F1D17FF0100E4CC15 /* Build configuration list for PBXNativeTarget "PhotographBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF86B1701D17FF0100E4CC15 /* Debug */,
+				FF86B1711D17FF0100E4CC15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF86B1551D17FF0100E4CC15 /* Project object */;
+}

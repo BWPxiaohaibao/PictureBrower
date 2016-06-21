@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qPP-bP-U3u">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="oUp-qd-yLh">
+            <objects>
+                <navigationController id="qPP-bP-U3u" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0cf-ds-IqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Xpi-ja-hkJ" kind="relationship" relationship="rootViewController" id="QZh-Lm-dxW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PTZ-ZM-GHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1317" y="-105"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="9R5-YI-xGa">
+            <objects>
+                <collectionViewController id="Xpi-ja-hkJ" customClass="HomeViewController" customModule="PhotographBrowser" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="z92-UZ-AH7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XYp-d6-bz3" customClass="HomeCollectionViewLayout" customModule="PhotographBrowser" customModuleProvider="target">
+                            <size key="itemSize" width="134" height="176"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="Nrr-1J-lbI" customClass="HomeViewCell" customModule="PhotographBrowser" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="134" height="176"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="134" height="176"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="evi-uS-kSb">
+                                            <rect key="frame" x="0.0" y="0.0" width="134" height="176"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="evi-uS-kSb" secondAttribute="trailing" id="E3A-br-SbC"/>
+                                    <constraint firstItem="evi-uS-kSb" firstAttribute="top" secondItem="Nrr-1J-lbI" secondAttribute="top" id="H44-wi-Oac"/>
+                                    <constraint firstAttribute="bottom" secondItem="evi-uS-kSb" secondAttribute="bottom" id="S8o-v2-cEp"/>
+                                    <constraint firstItem="evi-uS-kSb" firstAttribute="leading" secondItem="Nrr-1J-lbI" secondAttribute="leading" id="g5v-s5-gSU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="evi-uS-kSb" id="Buj-fJ-st8"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Xpi-ja-hkJ" id="0fd-Fo-B8D"/>
+                            <outlet property="delegate" destination="Xpi-ja-hkJ" id="Shc-v5-Bue"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Yrr-iZ-rxc"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnf-kK-ZaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-915" y="-105"/>
+        </scene>
+    </scenes>
+</document>
