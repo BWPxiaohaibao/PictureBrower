@@ -149,7 +149,7 @@ extension PictureBrowserController : UICollectionViewDelegate {
 
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        closeButtonClick()
+//        closeButtonClick()
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
